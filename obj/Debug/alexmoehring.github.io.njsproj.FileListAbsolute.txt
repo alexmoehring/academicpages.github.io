@@ -1,0 +1,2 @@
+C:\Users\v-moeale\git\alexmoehring.github.io\obj\Debug\alexmoehring.github.io.njsproj.CoreCompileInputs.cache
+C:\Users\v-moeale\git\alexmoehring.github.io\bin\Microsoft.NodejsTools.WebRole.dll
