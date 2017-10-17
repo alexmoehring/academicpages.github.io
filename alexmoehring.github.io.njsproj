@@ -1,242 +1,235 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-    <PropertyGroup>
-        <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
-        <SchemaVersion>2.0</SchemaVersion>
-        <ProjectGuid>{57857069-21b9-4586-b494-4d41f80d2a07}</ProjectGuid>
-        <ProjectHome />
-        <ProjectView>ShowAllFiles</ProjectView>
-        <StartupFile />
-        <WorkingDirectory>.</WorkingDirectory>
-        <OutputPath>.</OutputPath>
-        <ProjectTypeGuids>{3AF33F2E-1136-4D97-BBB7-1795711AC8B8};{349c5851-65df-11da-9384-00065b846f21};{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}</ProjectTypeGuids>
-        <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">14.0</VisualStudioVersion>
-        <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
-    </PropertyGroup>
-    <PropertyGroup Condition="'$(Configuration)' == 'Debug'" />
-    <PropertyGroup Condition="'$(Configuration)' == 'Release'" />
-    <ItemGroup>
-        <Content Include="package.json" />
-        <Content Include="CHANGELOG.md" />
-        <Content Include="CONTRIBUTING.md" />
-        <Content Include="README.md" />
-        <Content Include="images\500x300.png" />
-        <Content Include="images\editing-talk.png" />
-        <Content Include="images\mstile-144x144.png" />
-        <Content Include="images\mstile-150x150.png" />
-        <Content Include="images\mstile-310x150.png" />
-        <Content Include="images\mstile-310x310.png" />
-        <Content Include="images\mstile-70x70.png" />
-        <Content Include="images\paragraph-indent.png" />
-        <Content Include="images\paragraph-no-indent.png" />
-        <Content Include="images\profile.png" />
-        <Content Include="images\site-logo.png" />
-        <Content Include="images\3953273590_704e3899d5_m.jpg" />
-        <Content Include="images\bio-photo-2.jpg" />
-        <Content Include="images\bio-photo.jpg" />
-        <Content Include="images\foo-bar-identity-th.jpg" />
-        <Content Include="images\foo-bar-identity.jpg" />
-        <Content Include="images\image-alignment-1200x4002.jpg" />
-        <Content Include="images\image-alignment-150x150.jpg" />
-        <Content Include="images\image-alignment-300x200.jpg" />
-        <Content Include="images\image-alignment-580x300.jpg" />
-        <Content Include="images\safari-pinned-tab.svg" />
-        <Content Include="images\manifest.json" />
-        <Content Include="images\browserconfig.xml" />
-        <Content Include="markdown_generator\readme.md" />
-        <Content Include="talkmap\map.html" />
-        <Compile Include="talkmap\org-locations.js" />
-        <Content Include="_drafts\post-draft.md" />
-        <Content Include="_includes\analytics.html" />
-        <Content Include="_includes\archive-single-cv.html" />
-        <Content Include="_includes\archive-single-talk-cv.html" />
-        <Content Include="_includes\archive-single-talk.html" />
-        <Content Include="_includes\archive-single.html" />
-        <Content Include="_includes\author-profile.html" />
-        <Content Include="_includes\breadcrumbs.html" />
-        <Content Include="_includes\browser-upgrade.html" />
-        <Content Include="_includes\category-list.html" />
-        <Content Include="_includes\comment.html" />
-        <Content Include="_includes\comments.html" />
-        <Content Include="_includes\footer.html" />
-        <Content Include="_includes\head.html" />
-        <Content Include="_includes\masthead.html" />
-        <Content Include="_includes\page__hero.html" />
-        <Content Include="_includes\page__taxonomy.html" />
-        <Content Include="_includes\paginator.html" />
-        <Content Include="_includes\post_pagination.html" />
-        <Content Include="_includes\read-time.html" />
-        <Content Include="_includes\scripts.html" />
-        <Content Include="_includes\seo.html" />
-        <Content Include="_includes\sidebar.html" />
-        <Content Include="_includes\social-share.html" />
-        <Content Include="_includes\tag-list.html" />
-        <Content Include="_layouts\archive-taxonomy.html" />
-        <Content Include="_layouts\archive.html" />
-        <Content Include="_layouts\compress.html" />
-        <Content Include="_layouts\default.html" />
-        <Content Include="_layouts\single.html" />
-        <Content Include="_layouts\splash.html" />
-        <Content Include="_layouts\talk.html" />
-        <Content Include="_pages\category-archive.html" />
-        <Content Include="_pages\collection-archive.html" />
-        <Content Include="_pages\page-archive.html" />
-        <Content Include="_pages\portfolio.html" />
-        <Content Include="_pages\tag-archive.html" />
-        <Content Include="_pages\talkmap.html" />
-        <Content Include="_pages\talks.html" />
-        <Content Include="_pages\teaching.html" />
-        <Content Include="_pages\year-archive.html" />
-        <Content Include="_pages\404.md" />
-        <Content Include="_pages\about.md" />
-        <Content Include="_pages\archive-layout-with-content.md" />
-        <Content Include="_pages\cv.md" />
-        <Content Include="_pages\markdown.md" />
-        <Content Include="_pages\non-menu-page.md" />
-        <Content Include="_pages\publications.md" />
-        <Content Include="_pages\sitemap.md" />
-        <Content Include="_pages\terms.md" />
-        <Content Include="_portfolio\portfolio-2.html" />
-        <Content Include="_portfolio\portfolio-1.md" />
-        <Content Include="_posts\2012-08-14-blog-post-1.md" />
-        <Content Include="_posts\2013-08-14-blog-post-2.md" />
-        <Content Include="_posts\2014-08-14-blog-post-3.md" />
-        <Content Include="_posts\2015-08-14-blog-post-4.md" />
-        <Content Include="_publications\2009-10-01-paper-title-number-1.md" />
-        <Content Include="_publications\2010-10-01-paper-title-number-2.md" />
-        <Content Include="_publications\2015-10-01-paper-title-number-3.md" />
-        <Content Include="_talks\2012-03-01-talk-1.md" />
-        <Content Include="_talks\2013-03-01-tutorial-1.md" />
-        <Content Include="_talks\2014-02-01-talk-2.md" />
-        <Content Include="_talks\2014-03-01-talk-3.md" />
-        <Content Include="_teaching\2014-spring-teaching-1.md" />
-        <Content Include="_teaching\2015-spring-teaching-2.md" />
-        <Content Include="assets\css\academicons.css" />
-        <Content Include="assets\css\academicons.min.css" />
-        <Content Include="assets\css\collapse.css" />
-        <Content Include="assets\fonts\academicons.svg" />
-        <Content Include="assets\fonts\fontawesome-webfont.svg" />
-        <Compile Include="assets\js\collapse.js" />
-        <Compile Include="assets\js\main.min.js" />
-        <Compile Include="assets\js\_main.js" />
-        <Compile Include="assets\js\plugins\jquery.fitvids.js" />
-        <Compile Include="assets\js\plugins\jquery.greedy-navigation.js" />
-        <Compile Include="assets\js\plugins\jquery.magnific-popup.js" />
-        <Compile Include="assets\js\plugins\jquery.smooth-scroll.min.js" />
-        <Compile Include="assets\js\plugins\stickyfill.min.js" />
-        <Compile Include="assets\js\vendor\jquery\jquery-1.12.4.min.js" />
-        <Content Include="talkmap\leaflet_dist\MarkerCluster.css" />
-        <Content Include="talkmap\leaflet_dist\MarkerCluster.Default.css" />
-        <Content Include="talkmap\leaflet_dist\screen.css" />
-        <Compile Include="talkmap\leaflet_dist\leaflet.markercluster-src.js" />
-        <Compile Include="talkmap\leaflet_dist\leaflet.markercluster.js" />
-        <Content Include="_includes\analytics-providers\custom.html" />
-        <Content Include="_includes\analytics-providers\google-universal.html" />
-        <Content Include="_includes\analytics-providers\google.html" />
-        <Content Include="_includes\comments-providers\custom.html" />
-        <Content Include="_includes\comments-providers\discourse.html" />
-        <Content Include="_includes\comments-providers\disqus.html" />
-        <Content Include="_includes\comments-providers\facebook.html" />
-        <Content Include="_includes\comments-providers\google-plus.html" />
-        <Content Include="_includes\comments-providers\scripts.html" />
-        <Content Include="_includes\comments-providers\staticman.html" />
-        <Content Include="_includes\footer\custom.html" />
-        <Content Include="_includes\head\custom.html" />
-    </ItemGroup>
-    <ItemGroup>
-        <Folder Include="_data" />
-        <Folder Include="_data\comments" />
-        <Folder Include="_data\comments\layout-comments" />
-        <Folder Include="_data\comments\markup-syntax-highlighting" />
-        <Folder Include="_data\comments\welcome-to-jekyll" />
-        <Folder Include="_drafts" />
-        <Folder Include="_includes" />
-        <Folder Include="_includes\analytics-providers" />
-        <Folder Include="_includes\comments-providers" />
-        <Folder Include="_includes\footer" />
-        <Folder Include="_includes\head" />
-        <Folder Include="_layouts" />
-        <Folder Include="_pages" />
-        <Folder Include="_portfolio" />
-        <Folder Include="_posts" />
-        <Folder Include="_publications" />
-        <Folder Include="_sass" />
-        <Folder Include="_sass\vendor" />
-        <Folder Include="_sass\vendor\breakpoint" />
-        <Folder Include="_sass\vendor\breakpoint\parsers" />
-        <Folder Include="_sass\vendor\breakpoint\parsers\double" />
-        <Folder Include="_sass\vendor\breakpoint\parsers\resolution" />
-        <Folder Include="_sass\vendor\breakpoint\parsers\single" />
-        <Folder Include="_sass\vendor\breakpoint\parsers\triple" />
-        <Folder Include="_sass\vendor\font-awesome" />
-        <Folder Include="_sass\vendor\magnific-popup" />
-        <Folder Include="_sass\vendor\susy" />
-        <Folder Include="_sass\vendor\susy\susy" />
-        <Folder Include="_sass\vendor\susy\susy\language" />
-        <Folder Include="_sass\vendor\susy\susy\language\susy" />
-        <Folder Include="_sass\vendor\susy\susy\language\susyone" />
-        <Folder Include="_sass\vendor\susy\susy\output" />
-        <Folder Include="_sass\vendor\susy\susy\output\float" />
-        <Folder Include="_sass\vendor\susy\susy\output\shared" />
-        <Folder Include="_sass\vendor\susy\susy\output\support" />
-        <Folder Include="_sass\vendor\susy\susy\su" />
-        <Folder Include="_talks" />
-        <Folder Include="_teaching" />
-        <Folder Include="alexmoehring.github.io" />
-        <Folder Include="alexmoehring.github.io\alexmoehring.github.io" />
-        <Folder Include="assets" />
-        <Folder Include="assets\css" />
-        <Folder Include="assets\fonts" />
-        <Folder Include="assets\js" />
-        <Folder Include="assets\js\plugins" />
-        <Folder Include="assets\js\vendor" />
-        <Folder Include="assets\js\vendor\jquery" />
-        <Folder Include="files" />
-        <Folder Include="images" />
-        <Folder Include="markdown_generator" />
-        <Folder Include="talkmap" />
-        <Folder Include="talkmap\leaflet_dist" />
-    </ItemGroup>
-    <Import Project="$(MSBuildToolsPath)\Microsoft.Common.targets" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
-    <!--Do not delete the following Import Project.  While this appears to do nothing it is a marker for setting TypeScript properties before our import that depends on them.-->
-    <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets" Condition="False" />
-    <Import Project="$(VSToolsPath)\Node.js Tools\Microsoft.NodejsTools.targets" />
-    <ProjectExtensions>
-        <VisualStudio>
-          <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
-            <WebProjectProperties>
-              <UseIIS>False</UseIIS>
-              <AutoAssignPort>True</AutoAssignPort>
-              <DevelopmentServerPort>0</DevelopmentServerPort>
-              <DevelopmentServerVPath>/</DevelopmentServerVPath>
-              <IISUrl>http://localhost:48022/</IISUrl>
-              <NTLMAuthentication>False</NTLMAuthentication>
-              <UseCustomServer>True</UseCustomServer>
-              <CustomServerUrl>http://localhost:1337</CustomServerUrl>
-              <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
-            </WebProjectProperties>
-          </FlavorProperties>
-          <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}" User="">
-            <WebProjectProperties>
-              <StartPageUrl>
-              </StartPageUrl>
-              <StartAction>CurrentPage</StartAction>
-              <AspNetDebugging>True</AspNetDebugging>
-              <SilverlightDebugging>False</SilverlightDebugging>
-              <NativeDebugging>False</NativeDebugging>
-              <SQLDebugging>False</SQLDebugging>
-              <ExternalProgram>
-              </ExternalProgram>
-              <StartExternalURL>
-              </StartExternalURL>
-              <StartCmdLineArguments>
-              </StartCmdLineArguments>
-              <StartWorkingDirectory>
-              </StartWorkingDirectory>
-              <EnableENC>False</EnableENC>
-              <AlwaysStartWebServerOnDebug>False</AlwaysStartWebServerOnDebug>
-            </WebProjectProperties>
-          </FlavorProperties>
-        </VisualStudio>
-    </ProjectExtensions>
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{57857069-21b9-4586-b494-4d41f80d2a07}</ProjectGuid>
+    <ProjectHome />
+    <ProjectView>ShowAllFiles</ProjectView>
+    <StartupFile />
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <ProjectTypeGuids>{3AF33F2E-1136-4D97-BBB7-1795711AC8B8};{349c5851-65df-11da-9384-00065b846f21};{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}</ProjectTypeGuids>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">14.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Debug'" />
+  <PropertyGroup Condition="'$(Configuration)' == 'Release'" />
+  <ItemGroup>
+    <Content Include="images\alexmoehring.jpg" />
+    <Content Include="package.json" />
+    <Content Include="CHANGELOG.md" />
+    <Content Include="CONTRIBUTING.md" />
+    <Content Include="README.md" />
+    <Content Include="images\500x300.png" />
+    <Content Include="images\editing-talk.png" />
+    <Content Include="images\mstile-144x144.png" />
+    <Content Include="images\mstile-150x150.png" />
+    <Content Include="images\mstile-310x150.png" />
+    <Content Include="images\mstile-310x310.png" />
+    <Content Include="images\mstile-70x70.png" />
+    <Content Include="images\paragraph-indent.png" />
+    <Content Include="images\paragraph-no-indent.png" />
+    <Content Include="images\profile.png" />
+    <Content Include="images\site-logo.png" />
+    <Content Include="images\3953273590_704e3899d5_m.jpg" />
+    <Content Include="images\bio-photo-2.jpg" />
+    <Content Include="images\bio-photo.jpg" />
+    <Content Include="images\foo-bar-identity-th.jpg" />
+    <Content Include="images\foo-bar-identity.jpg" />
+    <Content Include="images\image-alignment-1200x4002.jpg" />
+    <Content Include="images\image-alignment-150x150.jpg" />
+    <Content Include="images\image-alignment-300x200.jpg" />
+    <Content Include="images\image-alignment-580x300.jpg" />
+    <Content Include="images\safari-pinned-tab.svg" />
+    <Content Include="images\manifest.json" />
+    <Content Include="images\browserconfig.xml" />
+    <Content Include="markdown_generator\readme.md" />
+    <Content Include="talkmap\map.html" />
+    <Compile Include="talkmap\org-locations.js" />
+    <Content Include="_drafts\post-draft.md" />
+    <Content Include="_includes\analytics.html" />
+    <Content Include="_includes\archive-single-cv.html" />
+    <Content Include="_includes\archive-single-talk-cv.html" />
+    <Content Include="_includes\archive-single-talk.html" />
+    <Content Include="_includes\archive-single.html" />
+    <Content Include="_includes\author-profile.html" />
+    <Content Include="_includes\breadcrumbs.html" />
+    <Content Include="_includes\browser-upgrade.html" />
+    <Content Include="_includes\category-list.html" />
+    <Content Include="_includes\comment.html" />
+    <Content Include="_includes\comments.html" />
+    <Content Include="_includes\footer.html" />
+    <Content Include="_includes\head.html" />
+    <Content Include="_includes\masthead.html" />
+    <Content Include="_includes\page__hero.html" />
+    <Content Include="_includes\page__taxonomy.html" />
+    <Content Include="_includes\paginator.html" />
+    <Content Include="_includes\post_pagination.html" />
+    <Content Include="_includes\read-time.html" />
+    <Content Include="_includes\scripts.html" />
+    <Content Include="_includes\seo.html" />
+    <Content Include="_includes\sidebar.html" />
+    <Content Include="_includes\social-share.html" />
+    <Content Include="_includes\tag-list.html" />
+    <Content Include="_layouts\archive-taxonomy.html" />
+    <Content Include="_layouts\archive.html" />
+    <Content Include="_layouts\compress.html" />
+    <Content Include="_layouts\default.html" />
+    <Content Include="_layouts\single.html" />
+    <Content Include="_layouts\splash.html" />
+    <Content Include="_layouts\talk.html" />
+    <Content Include="_pages\category-archive.html" />
+    <Content Include="_pages\collection-archive.html" />
+    <Content Include="_pages\page-archive.html" />
+    <Content Include="_pages\portfolio.html" />
+    <Content Include="_pages\tag-archive.html" />
+    <Content Include="_pages\talkmap.html" />
+    <Content Include="_pages\talks.html" />
+    <Content Include="_pages\teaching.html" />
+    <Content Include="_pages\year-archive.html" />
+    <Content Include="_pages\404.md" />
+    <Content Include="_pages\about.md" />
+    <Content Include="_pages\archive-layout-with-content.md" />
+    <Content Include="_pages\cv.md" />
+    <Content Include="_pages\markdown.md" />
+    <Content Include="_pages\non-menu-page.md" />
+    <Content Include="_pages\publications.md" />
+    <Content Include="_pages\sitemap.md" />
+    <Content Include="_pages\terms.md" />
+    <Content Include="_publications\2009-10-01-paper-title-number-1.md" />
+    <Content Include="_publications\2010-10-01-paper-title-number-2.md" />
+    <Content Include="_publications\2015-10-01-paper-title-number-3.md" />
+    <Content Include="_talks\2012-03-01-talk-1.md" />
+    <Content Include="_talks\2013-03-01-tutorial-1.md" />
+    <Content Include="_talks\2014-02-01-talk-2.md" />
+    <Content Include="_talks\2014-03-01-talk-3.md" />
+    <Content Include="_teaching\2014-spring-teaching-1.md" />
+    <Content Include="_teaching\2015-spring-teaching-2.md" />
+    <Content Include="assets\css\academicons.css" />
+    <Content Include="assets\css\academicons.min.css" />
+    <Content Include="assets\css\collapse.css" />
+    <Content Include="assets\fonts\academicons.svg" />
+    <Content Include="assets\fonts\fontawesome-webfont.svg" />
+    <Compile Include="assets\js\collapse.js" />
+    <Compile Include="assets\js\main.min.js" />
+    <Compile Include="assets\js\_main.js" />
+    <Compile Include="assets\js\plugins\jquery.fitvids.js" />
+    <Compile Include="assets\js\plugins\jquery.greedy-navigation.js" />
+    <Compile Include="assets\js\plugins\jquery.magnific-popup.js" />
+    <Compile Include="assets\js\plugins\jquery.smooth-scroll.min.js" />
+    <Compile Include="assets\js\plugins\stickyfill.min.js" />
+    <Compile Include="assets\js\vendor\jquery\jquery-1.12.4.min.js" />
+    <Content Include="talkmap\leaflet_dist\MarkerCluster.css" />
+    <Content Include="talkmap\leaflet_dist\MarkerCluster.Default.css" />
+    <Content Include="talkmap\leaflet_dist\screen.css" />
+    <Compile Include="talkmap\leaflet_dist\leaflet.markercluster-src.js" />
+    <Compile Include="talkmap\leaflet_dist\leaflet.markercluster.js" />
+    <Content Include="_includes\analytics-providers\custom.html" />
+    <Content Include="_includes\analytics-providers\google-universal.html" />
+    <Content Include="_includes\analytics-providers\google.html" />
+    <Content Include="_includes\comments-providers\custom.html" />
+    <Content Include="_includes\comments-providers\discourse.html" />
+    <Content Include="_includes\comments-providers\disqus.html" />
+    <Content Include="_includes\comments-providers\facebook.html" />
+    <Content Include="_includes\comments-providers\google-plus.html" />
+    <Content Include="_includes\comments-providers\scripts.html" />
+    <Content Include="_includes\comments-providers\staticman.html" />
+    <Content Include="_includes\footer\custom.html" />
+    <Content Include="_includes\head\custom.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="_data" />
+    <Folder Include="_data\comments" />
+    <Folder Include="_data\comments\layout-comments" />
+    <Folder Include="_data\comments\markup-syntax-highlighting" />
+    <Folder Include="_data\comments\welcome-to-jekyll" />
+    <Folder Include="_drafts" />
+    <Folder Include="_includes" />
+    <Folder Include="_includes\analytics-providers" />
+    <Folder Include="_includes\comments-providers" />
+    <Folder Include="_includes\footer" />
+    <Folder Include="_includes\head" />
+    <Folder Include="_layouts" />
+    <Folder Include="_pages" />
+    <Folder Include="_publications" />
+    <Folder Include="_sass" />
+    <Folder Include="_sass\vendor" />
+    <Folder Include="_sass\vendor\breakpoint" />
+    <Folder Include="_sass\vendor\breakpoint\parsers" />
+    <Folder Include="_sass\vendor\breakpoint\parsers\double" />
+    <Folder Include="_sass\vendor\breakpoint\parsers\resolution" />
+    <Folder Include="_sass\vendor\breakpoint\parsers\single" />
+    <Folder Include="_sass\vendor\breakpoint\parsers\triple" />
+    <Folder Include="_sass\vendor\font-awesome" />
+    <Folder Include="_sass\vendor\magnific-popup" />
+    <Folder Include="_sass\vendor\susy" />
+    <Folder Include="_sass\vendor\susy\susy" />
+    <Folder Include="_sass\vendor\susy\susy\language" />
+    <Folder Include="_sass\vendor\susy\susy\language\susy" />
+    <Folder Include="_sass\vendor\susy\susy\language\susyone" />
+    <Folder Include="_sass\vendor\susy\susy\output" />
+    <Folder Include="_sass\vendor\susy\susy\output\float" />
+    <Folder Include="_sass\vendor\susy\susy\output\shared" />
+    <Folder Include="_sass\vendor\susy\susy\output\support" />
+    <Folder Include="_sass\vendor\susy\susy\su" />
+    <Folder Include="_talks" />
+    <Folder Include="_teaching" />
+    <Folder Include="alexmoehring.github.io" />
+    <Folder Include="alexmoehring.github.io\alexmoehring.github.io" />
+    <Folder Include="assets" />
+    <Folder Include="assets\css" />
+    <Folder Include="assets\fonts" />
+    <Folder Include="assets\js" />
+    <Folder Include="assets\js\plugins" />
+    <Folder Include="assets\js\vendor" />
+    <Folder Include="assets\js\vendor\jquery" />
+    <Folder Include="files" />
+    <Folder Include="images" />
+    <Folder Include="markdown_generator" />
+    <Folder Include="talkmap" />
+    <Folder Include="talkmap\leaflet_dist" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.Common.targets" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <!--Do not delete the following Import Project.  While this appears to do nothing it is a marker for setting TypeScript properties before our import that depends on them.-->
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets" Condition="False" />
+  <Import Project="$(VSToolsPath)\Node.js Tools\Microsoft.NodejsTools.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>0</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:48022/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>True</UseCustomServer>
+          <CustomServerUrl>http://localhost:1337</CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}" User="">
+        <WebProjectProperties>
+          <StartPageUrl>
+          </StartPageUrl>
+          <StartAction>CurrentPage</StartAction>
+          <AspNetDebugging>True</AspNetDebugging>
+          <SilverlightDebugging>False</SilverlightDebugging>
+          <NativeDebugging>False</NativeDebugging>
+          <SQLDebugging>False</SQLDebugging>
+          <ExternalProgram>
+          </ExternalProgram>
+          <StartExternalURL>
+          </StartExternalURL>
+          <StartCmdLineArguments>
+          </StartCmdLineArguments>
+          <StartWorkingDirectory>
+          </StartWorkingDirectory>
+          <EnableENC>False</EnableENC>
+          <AlwaysStartWebServerOnDebug>False</AlwaysStartWebServerOnDebug>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
 </Project>
